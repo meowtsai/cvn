@@ -3,7 +3,7 @@ function initMap() {
   var customMapType = new google.maps.StyledMapType([
       {
         stylers: [
-          {'saturation': -100},
+          {'saturation': 0},
           {'lightness': 51},
           {'visibility': 'simplified'}
         ]
@@ -32,7 +32,7 @@ function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     scrollwheel: false,
-    center: {lat: 33.984127, lng: -117.747060},  
+    center: {lat: 33.9843718, lng: -117.716619},  
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
@@ -45,7 +45,7 @@ function initMap() {
   	map: map,
   	clickable: false,
   	icon: image,
-  	position: {lat: 33.984127, lng: -117.747060}
+  	position: {lat: 33.9843718, lng: -117.716619}
   });
 
   map.mapTypes.set(customMapTypeId, customMapType);
