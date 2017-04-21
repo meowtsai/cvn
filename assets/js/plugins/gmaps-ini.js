@@ -21,7 +21,7 @@ function initMap() {
   });
 
   var image = new google.maps.MarkerImage(
-  	'assets/img/marker.png',
+  	'images/marker.png',
   	new google.maps.Size(48,54),
   	new google.maps.Point(0,0),
   	new google.maps.Point(24,54)
